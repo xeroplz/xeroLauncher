@@ -1,0 +1,14 @@
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\bin\Debug\xeroLauncher.exe.config
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\bin\Debug\xeroLauncher.exe
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\bin\Debug\xeroLauncher.pdb
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\xeroLauncher.csprojResolveAssemblyReference.cache
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\MainWindow.g.cs
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\App.g.cs
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\xeroLauncher_MarkupCompile.cache
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\xeroLauncher_MarkupCompile.lref
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\MainWindow.baml
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\xeroLauncher.g.resources
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\xeroLauncher.Properties.Resources.resources
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\xeroLauncher.csproj.GenerateResource.Cache
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\xeroLauncher.exe
+Z:\Documents\GitHub\xeroLauncher\xeroLauncher\xeroLauncher\obj\Debug\xeroLauncher.pdb

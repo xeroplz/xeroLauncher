@@ -1,0 +1,81 @@
+﻿<Window x:Class="xeroLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xeroLauncher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" BorderThickness="10,10,10,11">
+    <Window.Resources>
+        <FontFamily x:Key="Raleway">pack://application:,,,/Resources/#Raleway</FontFamily>
+    </Window.Resources>
+    <Window.Effect>
+        <DropShadowEffect ShadowDepth="0" BlurRadius="10"/>
+    </Window.Effect>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="308*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header Bar -->
+        <Rectangle Name="HeaderBar_color_cb2121" Fill="#FFCB2121" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="1000" MouseDown="HeaderBar_color_cb2121_MouseDown"/>
+
+        <Rectangle Name="extra_background_rect" Fill="White" HorizontalAlignment="Left" Height="61" Margin="240,0,0,0" VerticalAlignment="Top" Width="520" Grid.RowSpan="2"/>
+
+        <!-- Current Folder -->
+        <Rectangle Name="button_placeholder_1" Fill="#fb5e5e" Margin="240,0,590,0" Height="61" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Label x:Name="label" Content="Current Folder" HorizontalAlignment="Left" Margin="240,0,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="150" Height="61" Foreground="White" FontSize="16" FontFamily="{DynamicResource Raleway}" Grid.RowSpan="2"/>
+
+        <!-- Specify Folder -->
+        <Rectangle Name="button_placeholder_2" Fill="#fb5e5e" Margin="425,0,405,0" Grid.RowSpan="2" Height="61" VerticalAlignment="Top"/>
+
+        <!-- ??? -->
+        <Rectangle Name="button_placeholder_3" Fill="#fb5e5e" Margin="610,0,220,0" Grid.RowSpan="2" Height="61" VerticalAlignment="Top"/>
+
+        <!-- Title -->
+        <Label x:Name="AuraLauncherLabel" Content="Aura Launcher" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="200" Background="{x:Null}" Foreground="White" FontFamily="{DynamicResource Raleway}" FontSize="18.667">
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard RepeatBehavior="1">
+                            <ColorAnimation To="#cb2121" 
+                                    Storyboard.TargetProperty="(Label.Foreground).(SolidColorBrush.Color)" 
+                                    AutoReverse="True"
+                                    Duration="0:0:1"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Label.Triggers>
+        </Label>
+
+        <!-- Welcome -->
+        <Label x:Name="Welcome" Content="WELCOME" Height="108" Margin="205,155,205,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="66.667" FontFamily="{DynamicResource Raleway}">
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="#cb2121" 
+                                    Storyboard.TargetProperty="(Label.Foreground).(SolidColorBrush.Color)" 
+                                    Duration="0:0:2"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Label.Triggers>
+        </Label>
+        <Label x:Name="WelcomeMessage" Content="Please select an option from the top list." HorizontalAlignment="Left" Height="115" Margin="240,290,0,0" Grid.Row="1" VerticalAlignment="Top" Width="520" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Foreground="White" FontSize="24" FontFamily="{DynamicResource Raleway}">
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation To="Black" 
+                                    Storyboard.TargetProperty="(Label.Foreground).(SolidColorBrush.Color)" 
+                                    Duration="0:0:3"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Label.Triggers>
+        </Label>
+
+    </Grid>
+</Window>
